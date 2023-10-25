@@ -71,7 +71,6 @@ function feedMe($feed) {
     }
 }
 
-// Yeni yazı oluştur
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($_POST['action']) && $_POST['action'] == 'new_post') {
     if (isset($_POST['submit'])) {
         $error = "";
