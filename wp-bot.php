@@ -20,7 +20,7 @@ function umit_bot_yonetim(){
     <form method="post" enctype="multipart/form-data">
         <table class="form-table">
             <tr>
-                <th style="width:20%"><label for="url">Site Url Adresi</label></th>
+                <th style="width:20%"><label for="url">Rss Url Adresi Örnek Wp İçin: https://www.sohbettemalari.com/feed</label></th>
                 <td><input type="text" name="url" size="30" style="width:97%" /></td>
                 <td><button type="submit" class="button button-primary button-large">Verileri Gör</button></td>
             </tr>
@@ -71,6 +71,7 @@ function feedMe($feed) {
     }
 }
 
+// Yeni yazı oluştur
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($_POST['action']) && $_POST['action'] == 'new_post') {
     if (isset($_POST['submit'])) {
         $error = "";
